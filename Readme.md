@@ -2,7 +2,7 @@
 
 The News Agent project comprises three agents designed to track, display, and notify users about the latest news articles. Each agent serves a unique purpose and showcases different functionalities.
 
-## Project 1: News Data Provider Agent 🚀📰
+## Agent 1: News Data Provider Agent 🚀📰
 
 The News Data Provider Agent continuously fetches top news articles from an external API and sends this data to other agents for processing and display.
 
@@ -13,7 +13,7 @@ The News Data Provider Agent continuously fetches top news articles from an exte
 
 For detailed instructions and usage, please refer to the README of the News Data Provider Agent.
 
-## Project 2: Console Display Agent (CLI) 🖥️📰
+## Agent 2: Console Display Agent (CLI) 🖥️📰
 
 The Console Display Agent, also known as "console_agent," displays news articles in a structured and user-friendly format on the console. It formats the news data and prints it for easy reading.
 
@@ -24,7 +24,7 @@ The Console Display Agent, also known as "console_agent," displays news articles
 
 For detailed instructions and usage, please refer to the README of the Console Display Agent.
 
-## Project 3: Web Display Agent (Web GUI) 🌐📰
+## Agent 3: Web Display Agent (Web GUI) 🌐📰
 
 The Web Display Agent, also known as "web_agent," serves as a web-based news display interface. It receives news data from other agents and presents it on a web page, allowing users to access news articles through a browser.
 
