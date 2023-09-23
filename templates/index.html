@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        strong {
+            font-size: 1.2em;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>News Display</h1>
+    <ul>
+        {% for news_item in data %}
+        <li>
+            <strong>{{ news_item.title }}</strong><br>
+            Source: {{ news_item.source_name }}<br>
+            Published At: {{ news_item.published_at }}<br>
+            Description: {{ news_item.description }}<br>
+            URL: <a href="{{ news_item.url }}" target="_blank">Read More</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
