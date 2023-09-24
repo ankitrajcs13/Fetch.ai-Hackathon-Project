@@ -12,7 +12,7 @@ class DataModel(Model):
     url: str | None
     published_at: str | None
 
-RECIPIENT_ADDRESS = "agent1q2kxet3vh0scsf0sm7y2erzz33cve6tv5uk63x64upw5g68kr0chkv7hw50"
+RECIPIENT_ADDRESS = "address"
 
 alice = Agent(
     name="alice",
@@ -23,7 +23,7 @@ alice = Agent(
 
 fund_agent_if_low(alice.wallet.address())
 
-NEWS_API_KEY = "250fd000a28d46bebaca31aaa2d9697d"
+NEWS_API_KEY = "key"
 
 def fetch_data_by_category(category):
     category_mapping = {
